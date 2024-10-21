@@ -2,8 +2,8 @@
 
 *{
     padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    margin: 0 ;
+    box-sizing: border-box !important;
     font-family: 'poppins', sans-serif !important;
     list-style: none;
 }
@@ -87,11 +87,14 @@ header{
         font-weight: 600;
     }
 }
+
+
 /* FOOTER */
+
+
 footer{
     background: linear-gradient(to top, #1a1a1a,#2a2a2a);
     width: 100%;
-    margin-top: 40px;
     position: relative;
     height: auto;
     padding: 50px 100px;
@@ -173,36 +176,38 @@ footer{
 /* HOME */
 h1{
     text-align: center;
-    margin: 40px 10px;
+    margin: 40px 0;
     padding: 10px;
-    font-size: 2em;
+    font-size: 2.4em;
     color: #222f;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 h1 span{
+    text-align: center;
     font-size: 1.6em;
-    color: #48c;
-    text-shadow: 2px 0 2px #5a5a5a;
-    font-weight: 600;
+    font-weight: 800;
+    background-image: linear-gradient(to right, #48c,#607cc9, #7b6fc0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 video{
     width: 100%;
     height: auto;
     border-radius: 30px;
 }
-/* .content-index{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    margin: 85px;
-    gap: 50px;
-}*/
 .text-intro{
     font-size: 1.1rem;
     color: #333030;
     font-weight: 500;
 }
+
+
 /* CONTACT */
+
+
 .box-center{
     display: flex;
     justify-content: center;
@@ -227,13 +232,22 @@ video{
     margin: 40px;
     gap: 20px;
 }
+@media (max-width: 700px){
+    .contact-box{
+        width: 90%;
+    }
+    .content-form{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    }
+}
 .site-box{
     padding: 20px;
     border-radius: 6px;
     border: 2px solid #888a;
 }
-.site-box legend{
-    font-size: 1.3em;
+.site-box h2{
+    font-size: 2em;
     padding: 0 10px;
     font-weight: 600;
     font-family: sans-serif;
@@ -268,13 +282,14 @@ video{
 }
 .form-register .form-group_2{
     display: flex;
+    margin: auto;
     padding: 12px;
     width: 100%;
     justify-content: start;
     align-items: center;
 }
 .form-register .form-group_2 p{
-    padding-left: 5px;
+    margin: 0 0 2px 5px;
     font-size: 12px;
     font-weight: 400;
 }
@@ -290,13 +305,15 @@ video{
 .form-send:hover{
     background-color: #2a2a2a;
 }
+
 /* PAGES (PlayStation, Xbox, Nintendo) */
+
 .banner{
     border-top: 1px solid #5a5a5a;
     box-shadow: 0px 10px 40px 5px #111;
     border-radius: 0 0 10px 10px;
     width: 100%;
-    height: auto;
+    max-height: 350px;
 }
 .console-article{
     padding: 0 30px;
@@ -311,6 +328,93 @@ video{
     font-size: 16px;
     font-weight: 400;
 }
+
+
+
+/* PLAYSTATION */
+
+
+/* .playstation{
+    background: linear-gradient(to top, #092f94, #4851bd,#7576e8, #a19dff, #cec6ff );
+    width: 100%;
+} */
+.carousel-caption h3{
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-shadow: 3px 1px 5px #111;
+}
+.carousel-caption p{
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 1px 0 5px #111;
+}
+.ps-carousel::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0,.333);
+    z-index: 1;
+}
+.about-text h3{
+    font-weight: 600;
+}
+.about-text p{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: justify;
+}
+.move-img img{
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, .5));
+    animation: bounce 2s linear infinite;
+}
+.last-release{
+    font-weight: 700;
+    font-size: 2em;
+}
+.last-release span{
+    background-image: linear-gradient(to bottom, #f5d849, #e28d18);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.shadow{
+    box-shadow: 0 0 50px 50px #7778 !important;
+}
+@keyframes bounce{
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(20px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    75%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+/* XBOX */
+
+
+.xbox{
+    background: linear-gradient(to bottom,#fff, #30a545, #2ca243,#008226, #006404, #004600 );
+    width: 100%;
+}
+.xbox h2{
+    font-weight: 700;
+}
 .container{
     display: grid;
     place-items: center;
@@ -321,6 +425,7 @@ video{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3.5rem;
+    margin-right: auto;
 }
 .card__article{
     position: relative;
@@ -342,6 +447,54 @@ video{
     right: 0;
     margin-inline: auto;
     transition: .6s;
+}
+@media (min-width: 990px) and (max-width: 1165px){
+    .card__img{
+        width: 250px;
+    }
+    .card__data{
+        width: 90%;
+    }
+}
+@media (min-width: 871px) and (max-width: 989px){
+    .card__container{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:  1fr;
+    }
+    .card__img{
+        width: 225px;
+    }
+    .card__data{
+        width: 90%;
+    }
+}
+@media (min-width: 601px) and (max-width: 870px){
+    .card__container{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:  1fr;
+    }
+    .card__img{
+        width: 200px;
+    }
+    .card__data{
+        width: 90%;
+    }
+}
+@media (max-width: 600px){
+    .card__container{
+        grid-template-columns: 1fr;
+        grid-template-rows:  1fr;
+        
+    }
+    .card__img{
+        width: 180px;
+        margin-top: 20px;
+    }
+    .card__data{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
 }
 .card__data:hover{
     background: linear-gradient(#fff, #dfdfdf,#afafaf);
@@ -368,24 +521,48 @@ video{
 .card_button:hover{
     text-decoration: underline;
 }
-/* PLAYSTATION */
-.playstation{
-    background: linear-gradient(to top, #092f94, #6d81b5,#a4bcfc, #444754 );
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-/* XBOX */
-.xbox{
-    background: linear-gradient(to bottom, #fff, #7b4,#2ca243,#107c10, #000 );
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
+
+
 /* NINTENDO */
+
+
 .nintendo{
     background: linear-gradient(to top, #0d0c0c, #a5a2a2,#e5e5e5,#fff, #dd2020 );
-    display: flex;
-    flex-direction: column;
     width: 100%;
+}
+.nintendo h2{
+    font-weight: 600;
+}
+.img-wrapper{
+    max-width: 100%;
+    height: 17em;
+}
+.img-wrapper img{
+    max-width: 100%;
+    max-height: 100%;
+}
+@media screen and (min-width:576px){
+    .content-img{
+        display: flex;
+    }
+    .nintendo-carousel{
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100%/3);
+    }
+    .img-wrapper{
+        height: 23vw;
+    }
+}
+.content-img{
+    padding: 1em;
+}
+.card{
+    margin: 0 .5rem;
+}
+.carousel-control-prev{
+    background-image: linear-gradient(to right, #777a, transparent);
+}
+.carousel-control-next{
+    background-image: linear-gradient(to left, #777a, transparent);
 }
