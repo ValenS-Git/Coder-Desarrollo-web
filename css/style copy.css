@@ -375,13 +375,14 @@ video{
 }
 .last-release{
     font-weight: 700;
-    font-size: 2em;
+    font-size: 2.5em
 }
 .last-release span{
     background-image: linear-gradient(to bottom, #f5d849, #e28d18);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    font-weight: 800;
 }
 .shadow{
     box-shadow: 0 0 50px 50px #7778 !important;
@@ -487,8 +488,8 @@ video{
         
     }
     .card__img{
-        width: 180px;
-        margin-top: 20px;
+        width: 200px;
+        margin-top: 10px;
     }
     .card__data{
         width: 90%;
@@ -515,7 +516,6 @@ video{
 .card_button{
     text-decoration: none;
     font-size: .8rem;
-    font-size: 500;
     color: #1a1a1a;
 }
 .card_button:hover{
