@@ -1,0 +1,58 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+.xbox{
+    background: linear-gradient(to bottom,#fff, #30a545, #2ca243,#008226, #006404, #004600 );
+    width: 100%;
+    .banner{
+        @include banners;
+    }
+    h2{
+        font-weight: $max-negrita;
+    }
+    .container{
+        display: grid;
+        place-items: center;
+        margin: 1.5rem;
+        padding-block: 5.5rem;
+        .card__container{
+            @include grids(grid,$columna-3,$fila,3.5rem);
+            margin-right: auto;
+            .card__article{
+                position: relative;
+                .card__img{
+                    width: 328px;
+                    height: 100%;
+                    border-radius: $large-radius;
+                }
+                .card__data{
+                    width: 280px;
+                    background-color: $text-white;
+                    padding: 1rem 1.5rem;
+                    box-shadow: 0 8px 24px $shadow;
+                    border-radius: $mid-radius;
+                    position: absolute;
+                    bottom: -2rem;
+                    left: 0;
+                    right: 0;
+                    margin-inline: auto;
+                    transition: .6s;
+                    .card_button{
+                        font-size: .8rem;
+                        color: $dark-disabled;
+                    }
+                    .card_title{
+                        @include texto(start, .95rem,$fino);
+                        color: $dark-disabled;
+                        margin-bottom: .5rem;
+                    }
+                    .card_description{
+                        display: block;
+                        font-size: .65rem;
+                        margin-bottom: .25rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@media screen and (min-width:576px){
+    .content-img{
+        display: flex;
+    }
+    .nintendo-carousel{
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100%/3);
+    }
+    .img-wrapper{
+        height: 23vw;
+    }
+}

@@ -1,0 +1,19 @@
+@import "../../utilities/variables";
+
+
+@media (max-width: 600px){
+    .card__container{
+        grid-template-columns: $columna !important;
+        grid-template-rows:  $fila !important;
+        
+    }
+    .card__img{
+        width: 200px !important;
+        margin-top: 10px !important;
+    }
+    .card__data{
+        width: 90% !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}

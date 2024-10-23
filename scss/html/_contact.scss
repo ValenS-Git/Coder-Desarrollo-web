@@ -1,0 +1,75 @@
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+.box-center{
+    @include display-var(flex, center, center);
+    font-size: 14px;
+    margin-bottom: 50px;
+    .contact-box{
+        @include flexing(flex, column,center,center,wrap);
+        background-color: $text-white;
+        box-shadow: 0px 0 5px 1px $grey-opacity-1;
+        width: 70%;
+        iframe{
+            width: 100%;
+        }
+        .content-form{
+            @include grids(grid,$columna-2,$fila,20px);
+            margin: 40px;
+            .site-box{
+                padding: 20px;
+                border-radius: $small-radius;
+                border: 2px solid $grey-opacity-1;
+                h2{
+                    @include texto(start, 20px,$negrita);
+                }
+                h4{
+                    padding-bottom: 10px;
+                    font-size: 16px;
+                }
+                a{
+                    color: $text-dark;
+                }
+                .form-register{
+                    @include flexing(flex,column,center,center,wrap);
+                    margin: auto;
+                    .form-input{
+                        @include texto(start,14px,$xtra-fino);
+                        font-family: sans-serif;
+                        width: 100%;
+                        padding: 5px;
+                        margin: 10px;
+                        border: 1px solid $dark-disabled;
+                        border-radius: $small-radius;
+                        textarea{
+                            resize: vertical;
+                        }
+                    }
+                    .form-group_1{
+                        @include display-var(flex,center,center);
+                        width: 100% !important;
+                    }
+                    .form-group_2{
+                        @include flexing(flex,row,start,center,wrap);
+                        margin: auto;
+                        width: 100%;
+                        padding: 12px;
+                        p{
+                            margin: 0 0 2px 5px;
+                            @include texto(start,12px,$xtra-fino);
+                        }
+                    }
+                    .form-send{
+                        width: 70%;
+                        background-color: $dark-disabled;
+                        color: $text-white;
+                        border: none;
+                        border-radius: $small-radius;
+                        padding: 2px 0;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

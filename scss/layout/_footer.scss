@@ -1,0 +1,55 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+footer{
+    background: linear-gradient(to top, #1a1a1a,#2a2a2a);
+    width: 100%;
+    position: relative;
+    height: auto;
+    padding: 50px 100px;
+    .content-footer{
+        width: 100%;
+        @include grids(grid,$columna-3,$fila,20px);
+        h2{
+            position: relative;
+            color: $text-white;
+            font-weight: $negrita;
+            margin-bottom: 15px;
+        }
+        p{
+            color: $bg-light;
+        }
+        .icons{
+            margin-top: 20px;
+            @include grids(grid,$columna-4,$fila,2px);
+            a{
+                width: 36px;
+                height: 36px;
+                font-size: 20px;
+                @include display-var(grid,center,center);
+                ion-icon{
+                    color: $violet;
+                }
+            }
+        }.box-ft{
+            position: relative;
+            a{
+                color: $bg-light;
+                margin-bottom: 10px;
+                display: inline-block;
+                transition: .2s;
+                &:hover{
+                    text-decoration: underline !important;
+                    color: $ps !important;
+                }
+            }
+        }
+    }
+}
+.copyright-text{
+    background-color: #1a1a1a;
+    color: $text-white;
+    text-align: center;
+    padding: 10px 50px;
+    border-top: .1px solid $grey-opacity-1;
+}

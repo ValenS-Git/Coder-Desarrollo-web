@@ -1,0 +1,24 @@
+@import "base/reset";
+@import "base/typographie";
+
+@import "layout/header";
+@import "layout/footer";
+
+@import "components/pseudoclases";
+@import "components/animation";
+@import "components/icon-arrow";
+
+@import "media-queries/mobile/mobile-xl";
+@import "media-queries/mobile/mobile-lg";
+@import "media-queries/mobile/mobile-md";
+@import "media-queries/desktop/portatile-sm";
+@import "media-queries/desktop/portatile-md";
+@import "media-queries/desktop/portatile-lg";
+@import "media-queries/desktop/desktop";
+
+@import "html/home";
+@import "html/playstation";
+@import "html/xbox";
+@import "html/nintendo";
+@import "html/contact";
+

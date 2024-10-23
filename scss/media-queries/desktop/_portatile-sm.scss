@@ -1,0 +1,14 @@
+@import "../../utilities/variables";
+
+@media (min-width: 871px) and (max-width: 989px){
+    .card__container{
+        grid-template-columns: $columna-3 !important;
+        grid-template-rows:  $fila !important;
+    }
+    .card__img{
+        width: 225px !important;
+    }
+    .card__data{
+        width: 90% !important;
+    }
+}

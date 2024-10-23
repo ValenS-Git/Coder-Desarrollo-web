@@ -1,0 +1,28 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+header{
+    background: linear-gradient(to bottom, #1a1a1a,#2a2a2a);
+    .logo{
+        font-size: 2em;
+        color: $text-white;
+        font-weight: $max-negrita;
+    }
+    .navbar-toggler-icon{
+        color: $text-white;
+        font-size: 1.5rem;
+    }
+    .section-link{
+        a{
+            font-size: 1em;
+            font-weight: $fino;
+            transition: .4s;
+        }
+    }
+    .btn-login{
+        color: $text-white;
+        @include buttons (120px,40px,transparent,2px solid #ddd, 10px, 5px);
+        cursor: pointer;
+        transition: .3s;
+    }
+}

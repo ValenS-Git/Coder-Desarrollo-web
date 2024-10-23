@@ -1,0 +1,55 @@
+@import "variables.scss";
+@import "../base/typographie";
+
+
+@mixin always {
+    margin: 0;
+    padding: 0;
+    box-sizing: $box !important;
+    list-style: none;
+    font-family: 'poppins', sans-serif !important;
+    text-decoration: none !important;
+}
+@mixin text-gradient{
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: $no-color;
+}
+@mixin display-var($disp,$j-content,$a-content){
+    display: $disp;
+    justify-content: $j-content;
+    align-content: $a-content;
+}
+@mixin grids($grid, $column, $row, $gap){
+    display: $grid;
+    grid-template-columns: $column;
+    grid-template-rows: $row;
+    gap: $gap;
+}
+@mixin flexing($disp, $direction, $content, $align, $wrap){
+    display: $disp;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+@mixin buttons($wd,$hg,$bground,$borde,$radius,$padd){
+    width: $wd;
+    height: $hg;
+    background-color: $bground;
+    border: $borde;
+    border-radius: $radius;
+    padding: $padd;
+}
+@mixin texto($align,$f-size,$f-weight){
+    text-align: $align;
+    font-size: $f-size;
+    font-weight: $f-weight;
+}
+@mixin banners{
+    border-top: 1px solid #5a5a5a;
+    box-shadow: 0px 10px 40px 5px #111;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    max-height: 350px;
+}

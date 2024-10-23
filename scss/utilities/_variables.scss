@@ -1,0 +1,36 @@
+//Colores
+$text-white: #fff;
+$white-disabled: #fffb;
+$text-dark: #111;
+$dark-disabled: #222d;
+$violet: #41d;
+$ps: #2e6db4;
+$xbox: #107C10;
+$nintendo: #dd2020;
+$bg-light: #ddd;
+$grey-opacity-1: #777a;
+$shadow: rgba(0,0,0,.5);
+$no-color: transparent;
+
+//Typographie
+$xtra-fino: 400;
+$fino: 500;
+$negrita: 600;
+$max-negrita: 700;
+
+//Displays y Box-sizing
+$between: space-between;
+$around: space-around;
+$box: border-box;
+$columna: 1fr;
+$columna-2: repeat(2, 1fr);
+$columna-3: repeat(3, 1fr);
+$columna-4: repeat(4,50px);
+$fila: 1fr;
+$fila-2: repeat(2, 1fr);
+$fila-3: repeat(3, 1fr);
+
+//Border radius
+$small-radius: 10px;
+$mid-radius: 20px;
+$large-radius: 30px;

@@ -1,0 +1,23 @@
+@import "../../utilities/variables";
+@import "../../utilities/mixins";
+
+@media (max-width: 992px){
+    .btn-login{
+        width: 100% !important;
+        border: none !important;
+        color: $text-dark !important;
+        background-color: $text-white !important;
+        position: relative;
+        top: 18.5rem;
+        font-weight: $negrita;
+        &:hover{
+            background: $white-disabled !important;
+            color: $dark-disabled !important;
+            font-weight: $negrita !important;
+        }
+    }
+    .sidebar{
+        background-color: #1f242d;
+        backdrop-filter: blur(10px);
+    }
+}

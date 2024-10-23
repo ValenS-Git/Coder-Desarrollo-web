@@ -154,7 +154,7 @@ footer{
 }
 @media (max-width: 670px){
     .content-footer{
-        grid-template-rows: repeat(3, fr);
+        grid-template-rows: repeat(3, 1fr);
         grid-template-columns: 1fr;
         width: 100%;
     }

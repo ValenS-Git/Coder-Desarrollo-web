@@ -1,0 +1,22 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+body{
+    background-color: $bg-light;
+    h1{
+        span{
+            @include texto(center, 1.6em, 800);
+            @include text-gradient;
+            background-image: linear-gradient(to right, #48c,#607cc9, #7b6fc0);
+        }
+    }
+    video{
+        width: 100%;
+        height: auto;
+        border-radius: $large-radius;
+    }
+    .text-intro{
+        @include texto(justify,1.1rem,$fino);
+        color: #333030;
+    }
+}
