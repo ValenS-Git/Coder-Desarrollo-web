@@ -303,7 +303,6 @@ body h1 span {
 body video {
   width: 100%;
   height: auto;
-  border-radius: 30px;
 }
 body .text-intro {
   text-align: justify;
